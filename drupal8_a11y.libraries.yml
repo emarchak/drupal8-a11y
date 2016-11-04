@@ -1,3 +1,12 @@
+announce:
+  version: VERSION
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+    - core/drupal.announce
+  js:
+      js/drupal8_a11y.announce.js: {}
 scroll:
   version: VERSION
   js:
