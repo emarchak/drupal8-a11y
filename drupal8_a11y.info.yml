@@ -1,0 +1,7 @@
+name: Getting to know Drupal 8
+type: theme
+description: Accessibility Tools & Techniques
+package: Other
+core: 8.x
+base theme: bootstrap
+
