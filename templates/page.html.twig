@@ -56,6 +56,7 @@
  * @see html.html.twig
  */
 #}
+{{ attach_library('drupal8_a11y/scroll') }}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}

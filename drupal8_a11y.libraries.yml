@@ -1,0 +1,7 @@
+scroll:
+  version: VERSION
+  js:
+    js/drupal8_a11y.scroll.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
