@@ -67,7 +67,7 @@
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
     %}
-    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" role="banner">
+    <header{{ navbar_attributes.addClass(navbar_classes) }} id="navbar" aria-label="{{ 'Navigation'|t }}">
       {% if not navbar_attributes.hasClass('container') %}
         <div class="{{ container }}">
       {% endif %}
@@ -99,13 +99,13 @@
 
 {# Main #}
 {% block main %}
-  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+  <div class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
 
       {# Header #}
       {% if page.header %}
         {% block header %}
-          <div class="col-sm-12" role="heading">
+          <div class="col-sm-12" role="heading" aria-label="{{ 'Sitewide'|t }}">
             {{ page.header }}
           </div>
         {% endblock %}
@@ -114,7 +114,7 @@
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
-          <aside class="col-sm-3" role="complementary">
+          <aside class="col-sm-3" aria-label="{{ 'Primary'|t }}">
             {{ page.sidebar_first }}
           </aside>
         {% endblock %}
@@ -161,15 +161,17 @@
 
         {# Content #}
         {% block content %}
+          <main  aria-label="{{ 'Content'|t }}">
           <a id="main-content"></a>
           {{ page.content }}
+          </main>
         {% endblock %}
       </section>
 
       {# Sidebar Second #}
       {% if page.sidebar_second %}
         {% block sidebar_second %}
-          <aside class="col-sm-3" role="complementary">
+          <aside class="col-sm-3" aria-label="{{ 'Secondary'|t }}">
             {{ page.sidebar_second }}
           </aside>
         {% endblock %}
@@ -180,7 +182,7 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
+    <footer class="footer {{ container }}">
       {{ page.footer }}
     </footer>
   {% endblock %}
