@@ -1,5 +1,18 @@
 base:
   version: VERSION
+  js:
+    js/drupal8_a11y.scroll.js: {}
   dependencies:
     - core/drupal
     - core/jquery
+announce:
+  version: VERSION
+  dependencies:
+      - core/jquery.once
+      - core/drupal.announce
+  js:
+      js/drupal8_a11y.announce.js: {}
+scroll:
+  version: VERSION
+  js:
+    js/drupal8_a11y.scroll.js: {}
