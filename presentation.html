@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">Getting to know Drupal 8</h1>
+
+<h2 id="toc_1">Accessibility Tools &amp; Techniques</h2>
+
+<p><a href="http://twitter.com/emarchak">@emarchak</a><br>
+<a href="http://emarchak.github.io/drupal8-a11y">emarchak.github.io/drupal8-a11y</a></p>
+
+<p><a href="http://myplanet.com">Erin Marchak</a><br>
+<a href="http://twitter.com/emarchak">@emarchak</a></p>
+
+<p><a href="http://myplanet.com">Myplanet</a></p>
+
+<p>We build engaging web and mobile<br>
+products for the enterprise</p>
+
+<p><a href="http://twitter.com/myplanetHQ">@myplanetHQ</a></p>
+
+<h2 id="toc_2">What am I going to cover?</h2>
+
+<ol>
+<li> Why I&#39;m here</li>
+<li> A11y &amp; Drupal 8</li>
+<li> How to identify a11y gaps</li>
+<li> How to resolve a11y gaps</li>
+<li> Further resources</li>
+</ol>
+
+<h2 id="toc_3">Why I&#39;m here</h2>
+
+<h3 id="toc_4">A Case Study</h3>
+
+<h1 id="toc_5">AMI</h1>
+
+<blockquote>
+<p>Myplanet had a lot of empathy for what we were trying to do.<br>
+They felt and understood the mission we had for the site.</p>
+</blockquote>
+
+<p>Virginia Vuleta<br>
+<em>Director, Digital Strategy, Accessible Media Inc</em></p>
+
+<ul>
+<li>  User Experience Testing</li>
+<li>  Design Audits</li>
+<li>  A11y Audits by <a href="http://www.davidmacd.com/">David MacDonald</a></li>
+<li>  Headless components using React.js</li>
+</ul>
+
+<p>RuPaul in a large blonde wig, saying &quot;put your money where your mug is.</p>
+
+<h2 id="toc_6">A11y &amp; D8</h2>
+
+<h3 id="toc_7">A11y</h3>
+
+<blockquote>
+<p>The power of the Web is<br>
+in its universality.</p>
+</blockquote>
+
+<p><a href="http://www.w3.org/standards/webdesign/accessibility">Tim Berners-Lee</a></p>
+
+<h4 id="toc_8">Types of barriers</h4>
+
+<ul>
+<li>  Physical, motor or mobile</li>
+<li>  Visual</li>
+<li>  Auditory</li>
+<li>  Learning</li>
+<li>  Speech or language</li>
+<li>  Mental, intellectual or developmental</li>
+</ul>
+
+<h4 id="toc_9">Types of solutions</h4>
+
+<ul>
+<li>  Keyboard, mouse &amp; touch navigation</li>
+<li>  Screen readers compatibility &amp; descriptive video</li>
+<li>  Captioning</li>
+<li>  Legible design &amp; information architecture</li>
+<li>  Translatable content</li>
+<li>  Trigger warnings for content</li>
+</ul>
+
+<p><img src="http://2.bp.blogspot.com/-itkFXKclo9o/UWfGAkP_1mI/AAAAAAAANa4/I7uPlyd1O9Y/s640/6.jpg" alt="overcoming bad design"></p>
+
+<h4 id="toc_10"><a href="http://www.w3.org/TR/WCAG20/">WCAG 2.0 Levels</a></h4>
+
+<ol>
+<li> <strong>Level A</strong> - Essential</li>
+<li> <strong>Level AA</strong> - Preferred</li>
+<li> <strong>Level AAA</strong> - Optional (nice, but in-acheivable) </li>
+</ol>
+
+<h3 id="toc_11">D8</h3>
+
+<p><a href="https://www.drupal.org/about/features/accessibility">#D8AX - Drupal 8 Accessibility eXperience</a></p>
+
+<h4 id="toc_12">A11y in Drupal 8</h4>
+
+<ul>
+<li>  <a href="http://openconcept.ca/blog/mike/drupal-8%E2%80%99s-accessibility-advantage-wai-aria">WAI-ARIA</a>, <a href="http://openconcept.ca/blog/mike/drupal-8%E2%80%99s-accessibility-advantage-html5-improved-semantics">HTML5 &amp; Improved Semantics</a></li>
+<li>  <a href="http://openconcept.ca/blog/mike/drupal-8%E2%80%99s-accessibility-advantage-alt-tags-defaults">Content authoring</a> &amp; <a href="http://openconcept.ca/blog/mike/drupal-8%E2%80%99s-accessibility-advantage-atag-compliance">ATAG Compliance</a></li>
+<li>  <a href="https://www.drupal.org/node/1973218">Tab Control</a></li>
+<li>  <a href="https://www.drupal.org/node/1973218">Aural Alerts</a></li>
+<li>  <a href="https://www.drupal.org/project/devel_a11y">Devel Accessibility</a> module</li>
+</ul>
+
+<p><a href="https://docs.google.com/presentation/d/19O3png9GsAam431zRd80EY3vDKMbXAnc4c0s2edpLa0/edit#slide=id.p6"><img src="img/gifford.png" alt="How Drupal 8 Makes Your Website More Easily Accessible"></a></p>
+
+<p><a href="https://docs.google.com/presentation/d/19O3png9GsAam431zRd80EY3vDKMbXAnc4c0s2edpLa0/edit#slide=id.p6">How Drupal 8 Makes Your Website More Easily Accessible</a></p>
+
+<p>Tyler, The Creator rapping the line &quot;I think I&#39;m wasting my damn time&quot; from his music video Yonkers.</p>
+
+<h2 id="toc_13">We didn&#39;t want <em>technically accessible</em>, we wanted <em>beautifully accessible</em></h2>
+
+<h2 id="toc_14">How to identify a11y gaps</h2>
+
+<h3 id="toc_15">Visual Testing</h3>
+
+<ul>
+<li>  Plan heading structure early</li>
+<li>  Prioritize function over form</li>
+<li>  Allow indicators</li>
+</ul>
+
+<h3 id="toc_16">Automated Functional testing</h3>
+
+<ul>
+<li>  Install the <a href="https://www.drupal.org/project/devel_a11y">Devel Accessibility</a> module.</li>
+<li>  <a href="http://wave.webaim.org/report#/http://events.drupal.org/dublin2016">WAVE toolbar by WebAIM</a></li>
+<li>  <a href="https://tenon.io/index.php">Tenon.io</a></li>
+</ul>
+
+<h3 id="toc_17">Manual Functional testing</h3>
+
+<ul>
+<li>  VoiceOver for macOS/iOS</li>
+<li>  TalkBack for Android</li>
+<li>  <a href="http://www.nvaccess.org/">NVDA</a> for Windows</li>
+<li>  <a href="http://www.freedomscientific.com/Products/Blindness/JAWS">JAWS</a> for Windows</li>
+</ul>
+
+<h3 id="toc_18">User Experience testing</h3>
+
+<ul>
+<li>  Pairs of researchers meet with individual users</li>
+<li>  Examine behaviours &amp; attitudes relevant to the workflow</li>
+</ul>
+
+<p><section data-state="orange-slide"></p>
+
+<h2 id="toc_19">How to resolve a11y gaps</h2>
+
+<h3 id="toc_20">Functional solutions</h3>
+
+<p>Code is available at <a href="https://github.com/emarchak/drupal8-a11y">github.com/emarchak/drupal8-a11y</a></p>
+
+<h4 id="toc_21">Landmark Labels</h4>
+
+<p><a href="https://github.com/emarchak/drupal8-a11y/commit/611ec51e9ab8eb27c539753ac9007092fce6cc65">Add descriptive aria labels to page landmarks.</a></p>
+
+<div><pre><code class="language-none">&lt;main aria-label=&quot;{{ &#39;Content&#39;|t }}&quot;&gt;</code></pre></div>
+
+<h4 id="toc_22">On-page scrolling</h4>
+
+<p><a href="https://github.com/emarchak/drupal8-a11y/commit/611ec51e9ab8eb27c539753ac9007092fce6cc65">Animate the scrolling and handling of focus.</a></p>
+
+<div><pre><code class="language-none">$(&#39;html, body&#39;)
+  .animate({scrollTop: targetPosition.top}, 600)
+  .promise()
+  .then(function () {
+    $(target).focus();
+  });</code></pre></div>
+
+<h4 id="toc_23">Relate block titles &amp; labels</h4>
+
+<p><a href="https://github.com/emarchak/drupal8-a11y/commit/ecc243256ca49b0c3f2cb9c24c1381d32dcec0ba">Use aria labelled by on blocks to help with association.</a></p>
+
+<div><pre><code class="language-none">&lt;a
+  id=&quot;{{ cta_id }}&quot;
+  class=&quot;btn btn-default&quot;
+  href=&quot;{{ content.field_call_to_action[0][&#39;#url&#39;] }}&quot;
+  aria-labelledby=&quot;{{ cta_id }} {{ heading_id }}&quot;&gt;</code></pre></div>
+
+<h4 id="toc_24">Form Errors</h4>
+
+<p>Enable Inline Form Errors module, &amp; <a href="https://github.com/emarchak/drupal8-a11y/commit/eda820068fefb52f511f9936ed4a84908a3ed2fe">remove HTML5 required attribute.</a></p>
+
+<div><pre><code class="language-none">if (isset($variables[&#39;attributes&#39;][&#39;required&#39;])) {
+  unset($variables[&#39;attributes&#39;][&#39;required&#39;]);
+}</code></pre></div>
+
+<h4 id="toc_25">Aural Announcements</h4>
+
+<p><a href="https://github.com/emarchak/drupal8-a11y/commit/1c7e5b5d5a9e4e4862df3500c60eec0fd7ac5715">Use Drupal.announce to inform users when the UI has updated.</a></p>
+
+<div><pre><code class="language-none">Drupal.announce(updates, &#39;polite&#39;);
+
+Drupal.announce(updates, &#39;assertive&#39;);</code></pre></div>
+
+<h4 id="toc_26">Drupal Console CLI</h4>
+
+<p>Use drupal console to speed up development!</p>
+
+<h3 id="toc_27">Experiential solutions</h3>
+
+<h4 id="toc_28">Visual Design Best Practices</h4>
+
+<ul>
+<li>  Check early, check often</li>
+<li>  <a href="https://github.com/getflourish/Sketch-Color-Contrast-Analyser">Sketch Color Contrast Analyser</a></li>
+<li>  <a href="http://webaim.org/blog/accessibility-for-designers/">WebAIM Accessibility Checklist</a></li>
+</ul>
+
+<h4 id="toc_29">UX Testing Best Practices</h4>
+
+<ul>
+<li>  Mixing remote and in-person testing</li>
+<li>  Bring-your-own-device</li>
+<li>  Emphasis on depth over breadth</li>
+</ul>
+
+<h2 id="toc_30">Further Resources</h2>
+
+<ul>
+<li>  The links contained in slide deck.</li>
+<li>  <a href="https://www.youtube.com/watch?v=fUGu2FE1tjw">Accessibility Myths Debunked: Why Smart Organizations Know it&#39;s Not Optional</a></li>
+<li>  <a href="https://www.youtube.com/watch?v=D25VvNfT0J4">Fast Paced Drupal 8: Accelerating Development with Composer, Drupal Console, and Services</a></li>
+<li>  <a href="http://www.meetup.com/drupalto/">DrupalTO meetup group</a> for all your questions</li>
+</ul>
+
+<p>RuPaul in a different large blonde wig, wagging her figner and saying &quot;I don&#39;t want to hear any goddamn excuse&quot;</p>
+
+<h1 id="toc_31">Thank you</h1>
+
+<p><a href="http://twitter.com/emarchak">@emarchak</a> / <a href="http://twitter.com/myplanetHQ">@myplanetHQ</a><br>
+<a href="http://emarchak.github.io/drupal8-a11y">emarchak.github.io/drupal8-a11y</a></p>
+
+
+
+
+</body>
+
+</html>
