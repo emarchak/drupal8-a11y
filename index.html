@@ -215,13 +215,13 @@
 			  <section><h3>Functional solutions<br/><small>Code is available at <a href="https://github.com/emarchak/drupal8-a11y">github.com/emarchak/drupal8-a11y</a></small></h3></section>
 			  <section>
   			  <h4>Landmark Labels<br/>
-    			  <small><a href="https://github.com/emarchak/drupal8-a11y/commit/611ec51e9ab8eb27c539753ac9007092fce6cc65">Add descriptive aria labels to page landmarks.</a></small>
+    			  <small><a href="https://github.com/emarchak/drupal8-a11y/commit/1a0d237a0f5ea5baa63f4d1c0fdc2727f6f2bf21">Add descriptive aria labels to page landmarks.</a></small>
   			  </h4>
           <pre><code data-trim data-noescape>&lt;main aria-label=&quot;{{ 'Content'|t }}&quot;&gt;</code></pre>
 			  </section>
 			  <section>
   			  <h4>On-page scrolling<br/>
-    			  <small><a href="https://github.com/emarchak/drupal8-a11y/commit/611ec51e9ab8eb27c539753ac9007092fce6cc65">Animate the scrolling and handling of focus.</a></small>
+    			  <small><a href="https://github.com/emarchak/drupal8-a11y/commit/83427a28e0997d75b9713cb1832d67742b513903">Animate the scrolling and handling of focus.</a></small>
   			  </h4>
           <pre><code data-trim data-noescape>$('html, body')
   .animate({scrollTop: targetPosition.top}, 600)
@@ -232,7 +232,7 @@
 			  </section>
 			  <section>
   			  <h4>Relate block titles & labels<br/>
-    			  <small><a href="https://github.com/emarchak/drupal8-a11y/commit/ecc243256ca49b0c3f2cb9c24c1381d32dcec0ba">Use aria labelled by on blocks to help with association.</a></small>
+    			  <small><a href="https://github.com/emarchak/drupal8-a11y/commit/0feb8330a5b1d4486d2be7c3f98d8d1bab092bef">Use aria labelled by on blocks to help with association.</a></small>
     			  </h4>
         <pre><code data-trim data-noescape>&lt;a
   id=&quot;{{ cta_id }}&quot;
@@ -242,7 +242,7 @@
 
 			  <section>
             <h4>Form Errors<br/>		  
-    			  <small> Enable Inline Form Errors module, & <a href="https://github.com/emarchak/drupal8-a11y/commit/eda820068fefb52f511f9936ed4a84908a3ed2fe">remove HTML5 required attribute.</a></small>
+    			  <small> Enable Inline Form Errors module, & <a href="https://github.com/emarchak/drupal8-a11y/commit/a6df085506eb67e32e248e2fb759a0b51ab23bd1">remove HTML5 required attribute.</a></small>
   			  </h4>
           <pre><code data-trim data-noescape>if (isset($variables['attributes']['required'])) {
   unset($variables['attributes']['required']);
@@ -250,7 +250,7 @@
           
 			  <section>
   			  <h4>Aural Announcements<br/>
-    			  <small><a href="https://github.com/emarchak/drupal8-a11y/commit/1c7e5b5d5a9e4e4862df3500c60eec0fd7ac5715">Use Drupal.announce to inform users when the UI has updated.</a></small>
+    			  <small><a href="https://github.com/emarchak/drupal8-a11y/commit/182523206eb40943fa721ae6c7483b51480bf8c6">Use Drupal.announce to inform users when the UI has updated.</a></small>
   			  </h4>
           <pre><code data-trim data-noescape>Drupal.announce(updates, 'polite');</code></pre>
           <pre><code data-trim data-noescape>Drupal.announce(updates, 'assertive');</code></pre>

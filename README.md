@@ -211,7 +211,7 @@ Code is available at [github.com/emarchak/drupal8-a11y](https://github.com/emarc
 
 
 #### Landmark Labels  
-[Add descriptive aria labels to page landmarks.](https://github.com/emarchak/drupal8-a11y/commit/611ec51e9ab8eb27c539753ac9007092fce6cc65)
+[Add descriptive aria labels to page landmarks.](https://github.com/emarchak/drupal8-a11y/commit/1a0d237a0f5ea5baa63f4d1c0fdc2727f6f2bf21)
 
     <main aria-label="{{ 'Content'|t }}">
 
@@ -220,7 +220,7 @@ Code is available at [github.com/emarchak/drupal8-a11y](https://github.com/emarc
 
 
 #### On-page scrolling  
-[Animate the scrolling and handling of focus.](https://github.com/emarchak/drupal8-a11y/commit/611ec51e9ab8eb27c539753ac9007092fce6cc65)
+[Animate the scrolling and handling of focus.](https://github.com/emarchak/drupal8-a11y/commit/83427a28e0997d75b9713cb1832d67742b513903)
 
     $('html, body')
       .animate({scrollTop: targetPosition.top}, 600)
@@ -234,7 +234,7 @@ Code is available at [github.com/emarchak/drupal8-a11y](https://github.com/emarc
 
 
 #### Relate block titles & labels  
-[Use aria labelled by on blocks to help with association.](https://github.com/emarchak/drupal8-a11y/commit/ecc243256ca49b0c3f2cb9c24c1381d32dcec0ba)
+[Use aria labelled by on blocks to help with association.](https://github.com/emarchak/drupal8-a11y/commit/0feb8330a5b1d4486d2be7c3f98d8d1bab092bef)
 
     <a
       id="{{ cta_id }}"
@@ -247,7 +247,7 @@ Code is available at [github.com/emarchak/drupal8-a11y](https://github.com/emarc
 
 
 #### Form Errors  
-Enable Inline Form Errors module, & [remove HTML5 required attribute.](https://github.com/emarchak/drupal8-a11y/commit/eda820068fefb52f511f9936ed4a84908a3ed2fe)
+Enable Inline Form Errors module, & [remove HTML5 required attribute.](https://github.com/emarchak/drupal8-a11y/commit/a6df085506eb67e32e248e2fb759a0b51ab23bd1)
 
     if (isset($variables['attributes']['required'])) {
       unset($variables['attributes']['required']);
@@ -258,7 +258,7 @@ Enable Inline Form Errors module, & [remove HTML5 required attribute.](https://g
 
 
 #### Aural Announcements  
-[Use Drupal.announce to inform users when the UI has updated.](https://github.com/emarchak/drupal8-a11y/commit/1c7e5b5d5a9e4e4862df3500c60eec0fd7ac5715)
+[Use Drupal.announce to inform users when the UI has updated.](https://github.com/emarchak/drupal8-a11y/commit/182523206eb40943fa721ae6c7483b51480bf8c6)
 
     Drupal.announce(updates, 'polite');
 
